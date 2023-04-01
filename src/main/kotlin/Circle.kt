@@ -3,10 +3,9 @@ class Circle(
 ) : Shapes("Circle") {
     private val pi = 3.141492
     init {
-        println("----------------------------------------------")
         println("A $name is creates with the radius of $radius")
-        println("Area of my circle is ${area()}")
-        println("Circumference of my circle is ${perimeter( )}")
+        println("$name area is ${area()}")
+        println("$name perimeter is ${perimeter( )}")
         println("Level 2")
     }
 

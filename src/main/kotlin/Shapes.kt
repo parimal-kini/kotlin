@@ -2,6 +2,7 @@ abstract class Shapes(
     var name : String
 ) {
     init {
+        println("----------------------------------------------")
         println("I am super class BITCH!")
         println("Level 1")
     }
