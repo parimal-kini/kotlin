@@ -1,4 +1,4 @@
-open class Shapes(
+abstract class Shapes(
     var name : String
 ) {
     init {
@@ -6,6 +6,8 @@ open class Shapes(
         println("Level 1")
     }
 
+    abstract fun area() : Double
+    abstract fun perimeter() : Double
     fun changeName(newName: String) {
         name = newName
     }

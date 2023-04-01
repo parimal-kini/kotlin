@@ -13,7 +13,7 @@ class Triangle(
         println("Area of my triangle is ${area()}")
         println("Perimeter of my circle is ${perimeter( )}")
     }
-    private fun area() = sqrt((perimeter()/2) * (perimeter()/ 2-a) * (perimeter()/ 2-b) *  (perimeter()/ 2-c))
-    private fun perimeter() = a + b + c
+    override fun area() = sqrt((perimeter()/2) * (perimeter()/ 2-a) * (perimeter()/ 2-b) *  (perimeter()/ 2-c))
+    override fun perimeter() = a + b + c
 
 }

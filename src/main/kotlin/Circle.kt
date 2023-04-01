@@ -1,16 +1,16 @@
 class Circle(
     val radius: Double
 ) : Shapes("Circle") {
-    val pi = 3.141492
+    private val pi = 3.141492
     init {
         println("----------------------------------------------")
         println("A $name is creates with the radius of $radius")
         println("Area of my circle is ${area()}")
-        println("Circumference of my circle is ${circumference( )}")
+        println("Circumference of my circle is ${perimeter( )}")
         println("Level 2")
     }
 
-    fun area() = pi * (radius*radius)
-    fun circumference() = 2 * pi * radius
+    override fun area() = pi * (radius*radius)
+    override fun perimeter() = 2 * pi * radius
 
 }
