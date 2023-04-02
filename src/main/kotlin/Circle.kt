@@ -1,5 +1,7 @@
 import kotlin.random.Random
 
+class RadiusCannotBeNegative: Exception("Radius cannot be zero or negative")
+
 class Circle(
     val radius: Double
 ) : Shapes("Circle") {
@@ -12,6 +14,8 @@ class Circle(
     }
 
     init {
+        if (radius <= 0) throw RadiusCannotBeNegative()
+
         println("A $name is creates with the radius of $radius")
         println("$name area is ${area()}")
         println("$name perimeter is ${perimeter( )}")
@@ -20,5 +24,4 @@ class Circle(
 
     override fun area() = ImportantNumbers.PI * (radius*radius)
     override fun perimeter() = 2 * ImportantNumbers.PI * radius
-
 }
