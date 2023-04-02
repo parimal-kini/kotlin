@@ -1,6 +1,7 @@
 abstract class Shapes(
     var name : String
 ) {
+    constructor(name: String, vararg dimensions: Double): this(name)
     init {
         println("----------------------------------------------")
         println("I am super class BITCH!")
